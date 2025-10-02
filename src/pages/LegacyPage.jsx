@@ -39,9 +39,9 @@ export default function LegacyPage() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-indigo-900 via-purple-800 to-black text-white p-6">
-      <h1 className="text-5xl font-bold mb-6">The Legacy Continues</h1>
-      <p className="text-lg mb-8 max-w-3xl text-center">
+    <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-indigo-900 via-indigo-800 to-black text-center text-yellow-300 font-serif w-screen overflow-x-hidden">
+      <h1 className="text-5xl font-bold mb-6 py-8">The Legacy Continues</h1>
+      <p className="text-lg mb-8 max-w-5xl text-center">
         Behold the timeless journey of heroes and legends. A fantasy tribute
         crafted in classic game style.
       </p>
@@ -93,6 +93,10 @@ export default function LegacyPage() {
           </button>
         </div>
       )}
+
+      <footer className="mt-2 py-6 text-sm text-yellow-400">
+        © 2025 Heroes of Might and Magic - Made by Tonio
+      </footer>
     </div>
   );
 }

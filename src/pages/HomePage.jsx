@@ -31,8 +31,6 @@ export default function HomePage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          Join us in celebrating three decades of legendary Heroes of Might and
-          Magic. <br />
           Relive the adventures, strategies, and unforgettable moments that
           shaped generations.
         </motion.p>
