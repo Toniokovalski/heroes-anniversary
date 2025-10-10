@@ -9,6 +9,7 @@ import Navbar from "./pages/Navbar.jsx";
 import HomePage from "./pages/HomePage";
 import LegacyPage from "./pages/LegacyPage";
 import BattlePage from "./pages/BattlePage.jsx";
+import AuthorPage from "./pages/AuthorPage.jsx";
 import FloatingMusicPlayer from "./components/FloatingMusicPlayer.jsx";
 
 function AnimatedRoutes() {
@@ -55,6 +56,19 @@ function AnimatedRoutes() {
               transition={{ duration: 0.5 }}
             >
               <BattlePage />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/author"
+          element={
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.5 }}
+            >
+              <AuthorPage />
             </motion.div>
           }
         />

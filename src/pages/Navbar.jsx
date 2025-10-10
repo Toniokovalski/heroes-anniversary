@@ -51,6 +51,10 @@ export default function Navbar() {
       to: "https://mightandmagic.fandom.com/wiki/List_of_Might_and_Magic_games",
       external: true,
     },
+    {
+      name: "About Me",
+      to: "/author",
+    },
   ];
 
   return (
