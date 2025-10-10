@@ -72,7 +72,7 @@ export default function Navbar() {
                   {link.name} ▾
                 </button>
                 {isHeroesOpen && (
-                  <ul className="absolute left-0 mt-2 w-48 bg-yellow-100 border border-yellow-400 rounded-lg shadow-lg z-10">
+                  <ul className="absolute left-0 w-48 bg-yellow-100 border border-yellow-400 rounded-lg shadow-lg z-10">
                     {link.submenu.map((sublink) => (
                       <li key={sublink.name}>
                         <a
