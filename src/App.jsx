@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "./pages/Navbar.jsx";
 import HomePage from "./pages/HomePage";
 import LegacyPage from "./pages/LegacyPage";
+import BattlePage from "./pages/BattlePage.jsx";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -39,6 +40,20 @@ function AnimatedRoutes() {
               transition={{ duration: 0.6 }}
             >
               <LegacyPage />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/battle"
+          element={
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.5 }}
+            >
+              <BattlePage />
             </motion.div>
           }
         />

@@ -7,6 +7,7 @@ export default function Navbar() {
   const links = [
     { name: "Home", to: "/" },
     { name: "Legacy", to: "/legacy" },
+    { name: "Battle Arena", to: "/battle" },
     {
       name: "Heroes",
       submenu: [
