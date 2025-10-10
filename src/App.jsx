@@ -5,6 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import Navbar from "./pages/Navbar.jsx";
 import HomePage from "./pages/HomePage";
 import LegacyPage from "./pages/LegacyPage";
 
@@ -27,6 +28,7 @@ function AnimatedRoutes() {
             </motion.div>
           }
         />
+
         <Route
           path="/legacy"
           element={
@@ -48,6 +50,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <Router>
+      <Navbar />
       <AnimatedRoutes />
     </Router>
   );
