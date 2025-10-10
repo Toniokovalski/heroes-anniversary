@@ -9,6 +9,7 @@ import Navbar from "./pages/Navbar.jsx";
 import HomePage from "./pages/HomePage";
 import LegacyPage from "./pages/LegacyPage";
 import BattlePage from "./pages/BattlePage.jsx";
+import FloatingMusicPlayer from "./components/FloatingMusicPlayer.jsx";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -67,6 +68,7 @@ export default function App() {
     <Router>
       <Navbar />
       <AnimatedRoutes />
+      <FloatingMusicPlayer />
     </Router>
   );
 }
